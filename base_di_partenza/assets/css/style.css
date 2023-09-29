@@ -234,6 +234,7 @@ aside {
 .dataNew2 {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .dataNew2 span img {
 	margin-right: 20px;
@@ -268,6 +269,7 @@ p.title2 {
 	border: 1px solid rgb(202, 201, 201);
 	padding: 3px;
 	color: rgb(162, 161, 161);
+	margin: 5px 0px 0 5px;
 }
 .sticky div {
 	display: flex;
