@@ -6,6 +6,10 @@ font-family: 'Spectral', serif; */
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
 }
+html,
+body {
+	height: 100%;
+}
 
 /* Nav */
 a:link,
@@ -217,13 +221,16 @@ article {
 	height: 134px;
 }
 aside {
-	width: 20%;
+	width: 30%;
 	display: flex;
-	position: relative;
-	position: sticky;
-	top: 200px;
+	height: 100vh;
 }
-
+.sticky {
+	height: 100vh;
+	top: 70px;
+	position: sticky;
+	z-index: 2;
+}
 .dataNew2 {
 	display: flex;
 	justify-content: space-between;
@@ -247,4 +254,41 @@ p.title2 {
 .news_card.news p:last-child {
 	color: rgb(147, 147, 147);
 	margin-bottom: 12px;
+}
+.sticky {
+	margin: 0 20px 0 80px;
+}
+.sticky p {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+.sticky button {
+	background-color: transparent;
+	border: 1px solid rgb(202, 201, 201);
+	padding: 3px;
+	color: rgb(162, 161, 161);
+}
+.sticky div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	border-bottom: 1px solid rgb(202, 201, 201);
+	padding-bottom: 30px;
+}
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 7px;
+	margin-top: 7px;
+	color: rgb(165, 164, 164);
+}
+
+ul {
+	margin-top: 20px;
+	margin-right: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
