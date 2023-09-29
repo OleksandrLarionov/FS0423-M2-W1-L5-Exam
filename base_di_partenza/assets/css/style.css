@@ -225,7 +225,6 @@ aside {
 	display: flex;
 }
 .sticky {
-	height: 100vh;
 	top: 70px;
 	position: sticky;
 	z-index: 2;
